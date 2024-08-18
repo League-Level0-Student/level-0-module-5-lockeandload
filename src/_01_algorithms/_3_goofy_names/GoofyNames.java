@@ -9,16 +9,22 @@ import java.util.Scanner;
 public class GoofyNames {
 	public static void main(String[] args) {
 		String name = "";
-		String goofyName = 
+		String goofyName;
 		// 1. Ask the user to enter their name
 		name = JOptionPane.showInputDialog("please enter your name");
 		// 2. Print upper case name to the console using .toUpperCase()
 		//    Run your program to see that this works.
-
+   goofyName = name.toUpperCase();
 		int length = name.length();
 		for(int num = 0; num < length; num++) {
-			int ;
-			System.out.println(name.charAt(num));
+			//System.out.println(goofyName);
+			//System.out.println(name);
+			if(num%2==0) {
+			System.out.println(goofyName.charAt(num));
+			}else {
+				System.out.println(name.charAt(num));
+			}
+			
 			}
 		// 3. Loop through each character of the name (steps 4 - 7).
 		//    HINT: Use .length() to determine the number of characters in the String.
